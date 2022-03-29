@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="484.0" prefWidth="508.0" spacing="20.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label text="Bienvenue Infinity bank" textFill="#7b7070">
+        <font>
+            <Font name="Arial Bold" size="21.0" />
+        </font>
+    </Label>
+    <Label prefHeight="17.0" prefWidth="74.0" text="Votre Email :" textFill="#797272">
+        <font>
+            <Font size="13.0" />
+        </font>
+    </Label>
+    <TextField id="email" fx:id="email" prefHeight="25.0" prefWidth="233.0" style="-fx-background-color: #7b7070;">
+      <VBox.margin>
+         <Insets left="125.0" right="125.0" />
+      </VBox.margin></TextField>
+    <Label text="Mot de passe :" textFill="#7b7070">
+        <font>
+            <Font size="13.0" />
+        </font>
+    </Label>
+    <TextField id="mot_de_passe" fx:id="mot_de_passe" style="-fx-background-color: #7b7070;">
+      <VBox.margin>
+         <Insets left="125.0" right="125.0" />
+      </VBox.margin></TextField>
+
+    <Label fx:id="errormessage" textFill="RED" />
+    <Button onAction="#onButtonClick" style="-fx-background-color: #7b7070;" text="Se connecter" />
+   <AnchorPane prefHeight="29.0" prefWidth="468.0">
+      <children>
+         <Button layoutX="389.0" layoutY="3.0" mnemonicParsing="false" onAction="#OnclickRetour" style="-fx-background-color: #7b7070;" text="Retour" />
+      </children>
+   </AnchorPane>
+
+</VBox>
